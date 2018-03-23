@@ -1,0 +1,11 @@
+src/
+test/
+node_modules/
+yarn-error.log
+yarn.lock
+.gitignore
+.idea/
+.travis.yml
+DOCS_INDEX_TEMPLATE.md
+README.md
+docs/

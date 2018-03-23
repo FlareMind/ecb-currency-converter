@@ -1,0 +1,31 @@
+{
+  "name": "ecb-currency-converter",
+  "version": "1.0.0",
+  "description": "Convert currencies using data from the European Central Bank.",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "repository": "https://github.com/FlareMind/ecb-currency-converter.git",
+  "author": "FlareMind <info@flaremind.com>",
+  "license": "Apache-2.0",
+  "private": false,
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json & npm run generate-docs",
+    "generate-docs": "typedoc --theme markdown --mdFlavour github --readme DOCS_INDEX_TEMPLATE.md --mode file --out docs src/index.ts",
+    "test": "mocha -r ts-node/register test/test-*.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^9.4.7",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.0",
+    "ts-node": "^4.1.0",
+    "typedoc": "^0.11.1",
+    "typedoc-plugin-markdown": "^1.0.14",
+    "typescript": "^2.7.1"
+  },
+  "dependencies": {
+    "@types/xml2js": "^0.4.2",
+    "xml2js": "^0.4.19"
+  }
+}
